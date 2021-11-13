@@ -17,10 +17,10 @@ public class AnnotatedStepGithubTest {
     @Story("Таб Issues")
     @Severity(SeverityLevel.TRIVIAL)
 
-    public void AnnotatedStepGithubTest () {
+    public void AnnotatedStepGithubTest() {
 
-    steps.OpenProfile();
-    steps.FindRepository(REPOSITORY);
-    steps.FindTabIssues();
+        steps.openProfile();
+        steps.findRepository(REPOSITORY);
+        steps.findTabIssues();
     }
 }

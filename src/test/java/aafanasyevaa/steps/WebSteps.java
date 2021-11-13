@@ -10,17 +10,17 @@ import static com.codeborne.selenide.Selenide.open;
 public class WebSteps {
 
     @Step ("Открыть главную страницу профиля на Github")
-    public void OpenProfile () {
+    public void openProfile() {
         open("https://github.com/aafanasyevaa");
     }
 
     @Step ("Найти репозиторий {repository}")
-    public void FindRepository (String repository) {
+    public void findRepository(String repository) {
         $(byText(repository)).click();
     }
 
     @Step ("Проверить наличие таба Issues")
-    public void FindTabIssues () {
+    public void findTabIssues() {
         $(".js-repo-nav").shouldHave(text("Issues"));
     }
 }

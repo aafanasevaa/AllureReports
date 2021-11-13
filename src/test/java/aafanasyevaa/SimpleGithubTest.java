@@ -20,11 +20,11 @@ public class SimpleGithubTest {
     @Story("Таб Issues")
     @Severity(SeverityLevel.TRIVIAL)
 
-    public void FirstTest () {
+    public void FirstTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-    open ("https://github.com/aafanasyevaa");
-    $(byText("AllureReports")).click();
-    $(".js-repo-nav").shouldHave(text("Issues"));
+        open("https://github.com/aafanasyevaa");
+        $(byText("AllureReports")).click();
+        $(".js-repo-nav").shouldHave(text("Issues"));
     }
 }
